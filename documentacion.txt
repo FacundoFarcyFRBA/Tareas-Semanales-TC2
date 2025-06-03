@@ -1,0 +1,23 @@
+
+PYTC2
+
+    https://github.com/marianux/pytc2/blob/master/docs/notebooks/ejnb_ComparativaOrdenes.ipynb
+
+    https://pytc2.readthedocs.io/en/latest/_modules/pytc2/sistemas_lineales.html#analyze_sys
+
+TC2
+    https://github.com/marianux/tc2/blob/main/5.13_GIC.png 
+
+MATPLOT (GRÁFICOS)
+
+    https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.grid.html
+
+MATPLOT (TRAZOS)
+
+    https://matplotlib.org/stable/gallery/lines_bars_and_markers/linestyles.html
+
+SCIPY.SIGNAL
+
+    https://docs.scipy.org/doc/scipy-1.15.2/reference/signal.html
+
+
