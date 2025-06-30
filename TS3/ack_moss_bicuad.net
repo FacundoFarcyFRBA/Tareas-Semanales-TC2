@@ -1,0 +1,33 @@
+* Z:\home\facu\TCII\TareasSemanales\Tareas-Semanales-TC2\TS3\ack_moss_bicuad.asc
+R1 N001 vi {R1}
+R2 N002 N001 {R2}
+R3 vo N001 {R3}
+R4 N005 N002 {R3}
+R5 N004 N003 {R4}
+R6 vo N004 {R4}
+C1 N003 N005 {C0}
+C2 N002 N001 {C0}
+XU1 N001 0 N002 opamp Aol=100K GBW=10Meg
+XU2 0 N005 vo opamp Aol=100K GBW=10Meg
+XU3 N004 0 N003 opamp Aol=100K GBW=10Meg
+V1 vi 0 AC 1 0
+.inc opamp.sub
+.ac dec 1000 {f0/50} {f0*50}
+* .param R3 {mc(R3_n, tol_R3)}
+* Configuración de la simulación
+* Parámetros generales
+* .param R2 {mc(R2_n, tol_R2)}
+* .param R1 {mc(R1_n, tol_R1)}
+* .param R4 {mc(R4_n, tol_R4)}
+* .param C0={mc(C0_n, tol_C0)}
+* .param tol_R1=0.1 tol_R2=0.1 tol_R3=0.1 tol_R4= 0.1
+.param tol_C0=0.1
+.param R4_n=1 R3_n=1 R2_n=1.414 R1_n=1
+.param C0_n=1
+* .step param run 1 100 1
+.param w0=1/R3/C0 f0=w0/2/pi oY=1 oW=1
+.param R1=R1_n/oY R2=R2_n/oY R3=R3_n/oY R4=R4_n/oY
+* .param R2={mc(R2_n, 0.1)}
+.param C0=C0_n*oY/oW
+.backanno
+.end
