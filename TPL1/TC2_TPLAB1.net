@@ -15,7 +15,7 @@ XU4 N006 Va N006 opamp Aol=100K GBW=10Meg
 R7 Vo N006 {R5}
 C3 0 Vo {C2}
 .lib opamp.sub
-.param R1=18k R2=33k R3=18k R4=18k C1=5.6n C2=5.6n R5=33K
+.param R1=10k R2=16.9k R3=10k R4=10k C1=10n C2=10n R5=16.9K
 .ac dec 1000 100 1MEGk
 .backanno
 .end
